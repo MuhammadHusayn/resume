@@ -11,20 +11,27 @@ ul {
 
 body {
     font-family: 'Merriweather', serif;
+    line-height: 1.4;
 }
 
 b {
     font-weight: 800;
 }
 
+
 .container {
     width: 1300px;
     padding: 0 10px;
 }
 
+.breaker {
+    display: block;
+    margin: 0 2px;
+    font-weight: 900;
+}
+
 .block {
     margin-bottom: 45px;
-    /*border: 1px solid red;*/
 }
 
 .block-heading {
@@ -34,7 +41,7 @@ b {
 }
 
 .block-heading h1 {
-    font-size: 38px;
+    font-size: 36px;
     font-weight: 900;
     margin: 0;
     text-transform: uppercase;
@@ -72,7 +79,7 @@ header .user-info-photo > img {
 .user-info h1 {
     font-size: 55px;
     font-weight: 900;
-    margin: 5px 0;
+    margin: 0;
 }
 
 .user-info h2 {
@@ -88,7 +95,7 @@ header .user-info-photo > img {
 
 .user-links li {
     width: 50%;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
 }
 
 .user-links a {
@@ -134,7 +141,7 @@ main .container {
 
 /* SUMMARY BLOCK */
 .summary-block p {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     margin-top: 10px;
 }
@@ -156,7 +163,7 @@ main .container {
     display: flex;
     align-items: flex-end;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 21px;
 }
 
 .company-info > h3 img {
@@ -168,7 +175,11 @@ main .container {
 }
 
 .experience-mini-block {
-    margin-top: 25px;
+    margin-top: 10px;
+}
+
+.experience-mini-block:not(:last-child) {
+    border-bottom: 1px dashed lightgrey;
 }
 
 .company-details {
@@ -177,7 +188,7 @@ main .container {
 
 .experience-mini-block .company-details {
     display: flex;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 500;
 }
 
@@ -193,9 +204,14 @@ main .container {
 }
 
 .experience-mini-block .company-details img {
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     margin-right: 2px;
+}
+
+.project-link > span {
+    display: inline-flex;
+    flex-direction: row;
 }
 
 .project-link img {
@@ -207,33 +223,20 @@ main .container {
 }
 
 .project-link a {
-    font-size: 13px;
-    margin-left: -5px;
+    font-size: 14px;
 }
 
 .bluepoints {
     margin-top: 12px;
     list-style-type: disc;
     margin-left: 20px;
-    font-size: 16px;
+    font-size: 17px;
     font-style: italic;
     letter-spacing: 0.6px;
 }
 
 .bluepoints li {
-    margin-bottom: 5px;
-}
-
-/* CERTIFICATIONS BLOCK */
-.certifications-block ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    margin-top: 10px;
-}
-
-.certifications-block ul li {
-    margin-bottom: 5px;
-    font-size: 15px;
+    margin-bottom: 7px;
 }
 
 /* LANGUAGE BLOCK */
@@ -241,7 +244,7 @@ main .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 7px 0;
 }
 
 .language-block li:nth-child(even) {
@@ -251,7 +254,6 @@ main .container {
 
 .language-block .text span {
     font-size: 13px;
-    margin-top: 3px;
 }
 
 .language-block .diagram span {
@@ -273,6 +275,7 @@ main .container {
     justify-content: center;
     margin-top: 10px;
 }
+
 .skills-block ul li {
     display: inline-flex;
     justify-content: center;
